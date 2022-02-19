@@ -1,20 +1,17 @@
-#importation de random-->genere des chiffres au hasard
 import random
-#affichage du message de bienvenue 
-print("Bienvenue au jeu, Le juste prix")
+print("Bienvenue au juste prix!")
 #affiche un nombre au hazard
-reponse=random.randint(1, 100)
-#demader au jouer un prix
+juste_prix =random.randint(1, 100)
 print("Entrer un chiffre entre 1 et 100")
 proposition = input()
 proposition = int(proposition)
 #verification de la proposition du joueur, tant que la proposition !=reponse
-while proposition != reponse:
-    if proposition < reponse:
+while proposition != juste_prix:
+    if proposition < juste_prix:
         print("C'est plus")
-    if proposition > reponse:
+    if proposition > juste_prix:
         print("C'est moins")
     print("Entrer un chiffre")
     proposition = input()
     proposition = int(proposition)
-print("Félicitation! Tu as trouvé le juste prix")
+print("Félicitations! Tu as trouvé le juste prix qui est",juste_prix)
