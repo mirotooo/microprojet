@@ -19,7 +19,7 @@ print("Le juste prix est entre 1 et", prix)
 juste_prix = random.randint(1, prix)
 proposition = 0
 compteur=1
-#verification de la proposition du joueur, tant que la proposition !=reponse
+#vérification de la proposition du joueur, tant que la proposition !=réponse
 while proposition != juste_prix:
     if mode != 'f' and compteur > limite and limite != 0:
         break
@@ -27,9 +27,9 @@ while proposition != juste_prix:
         print("Tentative ", compteur)
     else:
         print("Tentative ", compteur, " sur ", limite)
-        print("Entrez un chiffre")
-        proposition = input()
-        proposition = int(proposition)
+    print("Entrez un chiffre")
+    proposition = input()
+    proposition = int(proposition)
     if proposition < juste_prix:
         print("C'est plus")
     elif proposition > juste_prix:
