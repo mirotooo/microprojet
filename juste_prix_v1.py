@@ -5,7 +5,7 @@ juste_prix =random.randint(1, 100)
 print("Entrer un chiffre entre 1 et 100")
 proposition = input()
 proposition = int(proposition)
-#verification de la proposition du joueur, tant que la proposition !=reponse
+#vérification de la proposition du joueur, tant que la proposition !=réponse
 while proposition != juste_prix:
     if proposition < juste_prix:
         print("C'est plus")
